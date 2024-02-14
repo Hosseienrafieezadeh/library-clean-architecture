@@ -1,0 +1,11 @@
+F:\tav tamrin\LibraryApiClean\OnlineShops.Entitis\bin\Debug\net8.0\Library.Entitis.deps.json
+F:\tav tamrin\LibraryApiClean\OnlineShops.Entitis\bin\Debug\net8.0\Library.Entitis.dll
+F:\tav tamrin\LibraryApiClean\OnlineShops.Entitis\bin\Debug\net8.0\Library.Entitis.pdb
+F:\tav tamrin\LibraryApiClean\OnlineShops.Entitis\obj\Debug\net8.0\Library.Entitis.GeneratedMSBuildEditorConfig.editorconfig
+F:\tav tamrin\LibraryApiClean\OnlineShops.Entitis\obj\Debug\net8.0\Library.Entitis.AssemblyInfoInputs.cache
+F:\tav tamrin\LibraryApiClean\OnlineShops.Entitis\obj\Debug\net8.0\Library.Entitis.AssemblyInfo.cs
+F:\tav tamrin\LibraryApiClean\OnlineShops.Entitis\obj\Debug\net8.0\Library.Entitis.csproj.CoreCompileInputs.cache
+F:\tav tamrin\LibraryApiClean\OnlineShops.Entitis\obj\Debug\net8.0\Library.Entitis.dll
+F:\tav tamrin\LibraryApiClean\OnlineShops.Entitis\obj\Debug\net8.0\refint\Library.Entitis.dll
+F:\tav tamrin\LibraryApiClean\OnlineShops.Entitis\obj\Debug\net8.0\Library.Entitis.pdb
+F:\tav tamrin\LibraryApiClean\OnlineShops.Entitis\obj\Debug\net8.0\ref\Library.Entitis.dll

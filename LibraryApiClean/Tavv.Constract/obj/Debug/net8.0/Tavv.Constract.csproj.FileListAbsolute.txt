@@ -1,0 +1,11 @@
+F:\tav tamrin\LibraryApiClean\Tavv.Constract\bin\Debug\net8.0\Tavv.Constract.deps.json
+F:\tav tamrin\LibraryApiClean\Tavv.Constract\bin\Debug\net8.0\Tavv.Constract.dll
+F:\tav tamrin\LibraryApiClean\Tavv.Constract\bin\Debug\net8.0\Tavv.Constract.pdb
+F:\tav tamrin\LibraryApiClean\Tavv.Constract\obj\Debug\net8.0\Tavv.Constract.GeneratedMSBuildEditorConfig.editorconfig
+F:\tav tamrin\LibraryApiClean\Tavv.Constract\obj\Debug\net8.0\Tavv.Constract.AssemblyInfoInputs.cache
+F:\tav tamrin\LibraryApiClean\Tavv.Constract\obj\Debug\net8.0\Tavv.Constract.AssemblyInfo.cs
+F:\tav tamrin\LibraryApiClean\Tavv.Constract\obj\Debug\net8.0\Tavv.Constract.csproj.CoreCompileInputs.cache
+F:\tav tamrin\LibraryApiClean\Tavv.Constract\obj\Debug\net8.0\Tavv.Constract.dll
+F:\tav tamrin\LibraryApiClean\Tavv.Constract\obj\Debug\net8.0\refint\Tavv.Constract.dll
+F:\tav tamrin\LibraryApiClean\Tavv.Constract\obj\Debug\net8.0\Tavv.Constract.pdb
+F:\tav tamrin\LibraryApiClean\Tavv.Constract\obj\Debug\net8.0\ref\Tavv.Constract.dll
