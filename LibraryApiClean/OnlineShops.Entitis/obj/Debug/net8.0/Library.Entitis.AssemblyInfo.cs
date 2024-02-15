@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Library.Entitis")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+747980f37682db4d1b0b7b292cad3de429f0f625")]
 [assembly: System.Reflection.AssemblyProductAttribute("Library.Entitis")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Library.Entitis")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -16,28 +16,28 @@ namespace Library.RestApi.Controllers.Shelfs
             _service = service;
         }
 
-        [HttpPost("add-shelf")]
+        [HttpPost("add")]
         public async Task AddShelf([FromBody] AddShelfDto dto)
         {
             await _service.Add(dto);
             
         }
 
-        [HttpPatch("update-shelf/{id}")]
+        [HttpPatch("update/{id}")]
         public async Task UpdateShelf([FromRoute] int id, [FromBody] UpdateShelfDto dto)
         {
             await _service.Update(id, dto);
             
         }
 
-        [HttpDelete("delete-shelf/{id}")]
+        [HttpDelete("delete/{id}")]
         public async Task DeleteShelf([FromRoute] int id)
         {
             await _service.Delete(id);
             
         }
 
-        [HttpGet("get-shelf")]
+        [HttpGet("get")]
         public void GetShelf([FromQuery]GetShelfsDto  dto)
         {
             var shelves = _service.GetAll(dto);

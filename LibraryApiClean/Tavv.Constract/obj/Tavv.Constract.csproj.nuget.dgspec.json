@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\tav tamrin\\LibraryApiClean\\Tavv.Constract\\Tavv.Constract.csproj": {}
+    "F:\\tav tamrin\\libapi_clean\\LibraryApiClean\\Tavv.Constract\\Tavv.Constract.csproj": {}
   },
   "projects": {
-    "F:\\tav tamrin\\LibraryApiClean\\Tavv.Constract\\Tavv.Constract.csproj": {
+    "F:\\tav tamrin\\libapi_clean\\LibraryApiClean\\Tavv.Constract\\Tavv.Constract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\tav tamrin\\LibraryApiClean\\Tavv.Constract\\Tavv.Constract.csproj",
+        "projectUniqueName": "F:\\tav tamrin\\libapi_clean\\LibraryApiClean\\Tavv.Constract\\Tavv.Constract.csproj",
         "projectName": "Tavv.Constract",
-        "projectPath": "F:\\tav tamrin\\LibraryApiClean\\Tavv.Constract\\Tavv.Constract.csproj",
+        "projectPath": "F:\\tav tamrin\\libapi_clean\\LibraryApiClean\\Tavv.Constract\\Tavv.Constract.csproj",
         "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-        "outputPath": "F:\\tav tamrin\\LibraryApiClean\\Tavv.Constract\\obj\\",
+        "outputPath": "F:\\tav tamrin\\libapi_clean\\LibraryApiClean\\Tavv.Constract\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

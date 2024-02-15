@@ -21,14 +21,14 @@ namespace Library.RestApi.Controllers
           
         }
 
-        [HttpPatch("update-book/{id}")]
+        [HttpPatch("update/{id}")]
         public async Task UpdateBook([FromRoute] int id, [FromBody] UpdateBookDto dto)
         {
            await _service.Update(id, dto);
            
         }
 
-        [HttpDelete("delete-book/{id}")]
+        [HttpDelete("delete/{id}")]
         public async Task DeleteBook([FromRoute]int id)
         {
             
@@ -36,7 +36,7 @@ namespace Library.RestApi.Controllers
        
         }
 
-        [HttpGet("get-book")]
+        [HttpGet("get")]
         public void  GetBook(GetBookDto dto)
         {
           _service.GetAll(dto);

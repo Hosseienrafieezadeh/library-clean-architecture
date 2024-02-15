@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K2t2lnBNzTdZmWaMa11Gs5p316esOI0UEp2YRMW5fhdEiODV5UDpyDUSwxMrMUg0tpQfxCk2pnbWHIYB19G0Kw==",
+  "dgSpecHash": "wXDcnUJqHugqf3cEMgrTl4+v2Rrpdl7MsWaKqMOxNfdaTAIhrdka63SPVMeI5MMhi3B+xxGbpXgQMTJGxsVVhw==",
   "success": true,
-  "projectFilePath": "F:\\tav tamrin\\LibraryApiClean\\Library.Persistence.EF\\Library.Persistence.EF.csproj",
+  "projectFilePath": "F:\\tav tamrin\\libapi_clean\\LibraryApiClean\\Library.Persistence.EF\\Library.Persistence.EF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ACER\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

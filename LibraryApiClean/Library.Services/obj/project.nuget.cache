@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AxhUode7C7RyJ2Y5iLoKkTiegWXQ/7NNpRP/8Cqoiz1kxRVugICqOrEYk2i11PKpGfdq3DthWbYrUq5YTxii/w==",
+  "dgSpecHash": "RJtRxFiGa3WYahGTuPmZhSdZl0e+EbSUvpmAPG8nlfQ8lRZeF/aCjthVzvqPs6PdDJkEpaxwCr3OEacOBsWaTQ==",
   "success": true,
-  "projectFilePath": "F:\\tav tamrin\\LibraryApiClean\\Library.Services\\Library.Services.csproj",
+  "projectFilePath": "F:\\tav tamrin\\libapi_clean\\LibraryApiClean\\Library.Services\\Library.Services.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

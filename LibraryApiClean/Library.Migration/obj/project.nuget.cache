@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CaS5udhoP5+mJVPSSO3BgyL76S1IQbRM1IlDMOPHhx89Yik30Pzt7gSKjWzCQMHRV8tHCoL6eKhLNmlNWxfxOQ==",
+  "dgSpecHash": "Z8BoeLyDVWkiRlYNhx351Kyn8rnB3u05k880b4coe9OsUnWf/T7BVMBy8miy8zJ+cptNKEAooVqV7YyCorEMWw==",
   "success": true,
-  "projectFilePath": "F:\\tav tamrin\\LibraryApiClean\\Library.Migration\\Library.Migrations.csproj",
+  "projectFilePath": "F:\\tav tamrin\\libapi_clean\\LibraryApiClean\\Library.Migration\\Library.Migrations.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ACER\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

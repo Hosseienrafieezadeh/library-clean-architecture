@@ -3154,11 +3154,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\tav tamrin\\LibraryApiClean\\Library.RestApi\\Library.RestApi.csproj",
+      "projectUniqueName": "F:\\tav tamrin\\libapi_clean\\LibraryApiClean\\Library.RestApi\\Library.RestApi.csproj",
       "projectName": "Library.RestApi",
-      "projectPath": "F:\\tav tamrin\\LibraryApiClean\\Library.RestApi\\Library.RestApi.csproj",
+      "projectPath": "F:\\tav tamrin\\libapi_clean\\LibraryApiClean\\Library.RestApi\\Library.RestApi.csproj",
       "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-      "outputPath": "F:\\tav tamrin\\LibraryApiClean\\Library.RestApi\\obj\\",
+      "outputPath": "F:\\tav tamrin\\libapi_clean\\LibraryApiClean\\Library.RestApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3180,14 +3180,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "F:\\tav tamrin\\LibraryApiClean\\Library.Persistence.EF\\Library.Persistence.EF.csproj": {
-              "projectPath": "F:\\tav tamrin\\LibraryApiClean\\Library.Persistence.EF\\Library.Persistence.EF.csproj"
+            "F:\\tav tamrin\\libapi_clean\\LibraryApiClean\\Library.Persistence.EF\\Library.Persistence.EF.csproj": {
+              "projectPath": "F:\\tav tamrin\\libapi_clean\\LibraryApiClean\\Library.Persistence.EF\\Library.Persistence.EF.csproj"
             },
-            "F:\\tav tamrin\\LibraryApiClean\\Library.Services\\Library.Services.csproj": {
-              "projectPath": "F:\\tav tamrin\\LibraryApiClean\\Library.Services\\Library.Services.csproj"
+            "F:\\tav tamrin\\libapi_clean\\LibraryApiClean\\Library.Services\\Library.Services.csproj": {
+              "projectPath": "F:\\tav tamrin\\libapi_clean\\LibraryApiClean\\Library.Services\\Library.Services.csproj"
             },
-            "F:\\tav tamrin\\LibraryApiClean\\Tavv.Constract\\Tavv.Constract.csproj": {
-              "projectPath": "F:\\tav tamrin\\LibraryApiClean\\Tavv.Constract\\Tavv.Constract.csproj"
+            "F:\\tav tamrin\\libapi_clean\\LibraryApiClean\\Tavv.Constract\\Tavv.Constract.csproj": {
+              "projectPath": "F:\\tav tamrin\\libapi_clean\\LibraryApiClean\\Tavv.Constract\\Tavv.Constract.csproj"
             }
           }
         }

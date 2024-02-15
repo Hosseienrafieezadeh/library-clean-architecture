@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bf3BHpoGpz9sr6mTTkS1DoEMyXCy3ExBIc9NXjHJjv/1NahlXT5TuwNLiCgdfr2AEID+3qw3tb/jeufHYmp8MQ==",
+  "dgSpecHash": "fNmINAAaPIPIMwfBF4wdAoF2/ar8xYYMNIg7SC2zTiKhuONiNyioAgspuAEAm3hrVltC71VfLKNNsKoou/fSpw==",
   "success": true,
-  "projectFilePath": "F:\\tav tamrin\\LibraryApiClean\\Library.RestApi\\Library.RestApi.csproj",
+  "projectFilePath": "F:\\tav tamrin\\libapi_clean\\LibraryApiClean\\Library.RestApi\\Library.RestApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ACER\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

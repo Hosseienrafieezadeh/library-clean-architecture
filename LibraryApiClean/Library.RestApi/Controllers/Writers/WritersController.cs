@@ -16,28 +16,28 @@ namespace Library.RestApi.Controllers.Writers
             _service = service;
         }
 
-        [HttpPost("add-writer")]
+        [HttpPost("add")]
         public async Task  AddWriter([FromBody] AddWriterDto dto)
         {
             await _service.Add(dto);
            
         }
 
-        [HttpPatch("update-writer/{id}")]
+        [HttpPatch("update/{id}")]
         public async Task UpdateWriter([FromRoute] int id, [FromBody] UpdateWriterDto dto)
         {
             await _service.Update(id, dto);
             
         }
 
-        [HttpDelete("delete-writer/{id}")]
+        [HttpDelete("delete/{id}")]
         public async Task DeleteWriter([FromRoute] int id)
         {
             await _service.Delete(id);
          
         }
 
-        [HttpGet("get-writer")]
+        [HttpGet("get")]
         public void GetWriter( GetWriterDto dto)
         {
             var writers = _service.GetAll(dto);
