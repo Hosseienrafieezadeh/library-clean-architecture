@@ -16,6 +16,6 @@ namespace Library.Services.Writers.Contracts
         void Delete(Writer writer);
 
         void Update(Writer writer);
-        List<Writer> GetAll(GetWriterDto dto);
+        List<GetWriterDto> GetAll(GetWriterFilterDto dto);
     }
 }

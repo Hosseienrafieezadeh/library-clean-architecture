@@ -14,6 +14,6 @@ namespace Library.Services.Writers.Contracts
         Task Add(AddWriterDto dto);
         Task Update(int id, UpdateWriterDto dto);
         Task Delete(int id);
-        List<Writer> GetAll(GetWriterDto dto);
+        List<GetWriterDto> GetAll(GetWriterFilterDto dto);
     }
 }

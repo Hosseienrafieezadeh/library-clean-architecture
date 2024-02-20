@@ -73,19 +73,18 @@ namespace Library.Services.Members
             await _unitOfWork.Complete();
         }
 
-        public List<Member> GetAll(GetMemberDto dto)
+        public List<GetMemberDto> GetUser(GetMemberFillterDto filterDto)
         {
-            try
-            {
+           
+            
+                return _repozitory.GetUsersByName(filterDto);
 
-                var member = _repozitory.GetAll(dto);
-                return member;
-            }
-            catch (Exception ex)
-            {
+            
+        }
 
-                throw new Exception("An error occurred while fetching books: " + ex.Message);
-            }
+        public List<GetMemberRentBook> GetUserRentBooks(int userId)
+        {
+            return _repozitory.GetUserRentBooksByID(userId);
         }
 
         public async Task Update(string name, UpdateMemberDtoscs dto)

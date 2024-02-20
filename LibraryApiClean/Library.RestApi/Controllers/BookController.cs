@@ -37,10 +37,11 @@ namespace Library.RestApi.Controllers
         }
 
         [HttpGet("get")]
-        public void  GetBook(GetBookDto dto)
+        public List<GetBookDto> GetAll([FromQuery] GetBookFilterDto filterDto)
         {
-          _service.GetAll(dto);
-            
+
+            return _service.GetAll(filterDto);
+
         }
     }
 }

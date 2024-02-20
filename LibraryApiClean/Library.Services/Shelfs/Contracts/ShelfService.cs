@@ -14,6 +14,6 @@ namespace Library.Services.Shelfs.Contracts
         Task Add(AddShelfDto dto);
         Task Update(int id, UpdateShelfDto dto);
         Task Delete(int id);
-        List<Shelf> GetAll(GetShelfsDto dto);
+        List<GetShelfsDto> GetAll(GetShelfFilterDto dto);
     }
 }

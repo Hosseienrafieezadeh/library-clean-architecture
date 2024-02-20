@@ -36,12 +36,10 @@ namespace Library.RestApi.Controllers.Shelfs
             await _service.Delete(id);
             
         }
-
-        [HttpGet("get")]
-        public void GetShelf([FromQuery]GetShelfsDto  dto)
+        [HttpGet]
+        public List<GetShelfsDto> GetAll([FromQuery] GetShelfFilterDto dto)
         {
-            var shelves = _service.GetAll(dto);
-            
+            return _service.GetAll(dto);
         }
     }
 }

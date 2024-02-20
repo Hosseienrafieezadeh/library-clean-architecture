@@ -29,18 +29,20 @@ namespace Library.Persistence.EF.Writers
             _context.Writers.Remove(writer);
         }
 
-        public List<Writer> GetAll(GetWriterDto dto)
+        public List<GetWriterDto> GetAll(GetWriterFilterDto dto)
         {
             IQueryable<Writer> query = _context.Writers;
-
-            if (!string.IsNullOrEmpty(dto.Name))
+            if (!string.IsNullOrWhiteSpace(dto.Name))
             {
-                query = query.Where(w => w.Name.Contains(dto.Name));
+                query = query.Where(_ => _.Name.Contains(dto.Name));
             }
-
-            return query.ToList();
+            List<GetWriterDto> authors = query.Select(author => new GetWriterDto
+            {
+                Name = author.Name,
+                Id = author.Id
+            }).ToList();
+            return authors;
         }
-
 
         public Writer IsExisWriter(int Id)
         {

@@ -14,7 +14,7 @@ namespace Library.Services.Books.Contracts
         Task Add(AddBookDto dto);
         Task Update(int id,UpdateBookDto dto);
         Task Delete(int id);
-        List<Book>  GetAll(GetBookDto dto);
-       
+        List<GetBookDto> GetAll(GetBookFilterDto filterDto);
+
     }
 }

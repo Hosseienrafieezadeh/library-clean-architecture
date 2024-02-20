@@ -28,17 +28,26 @@ namespace Library.Persistence.EF.Shelfs
          _context.Shelves.Remove(shelf);
         }
 
-        public List<Shelf> GetAll(GetShelfsDto dto)
+       
+
+        public List<GetShelfsDto> GetAll(GetShelfFilterDto dto)
         {
             IQueryable<Shelf> query = _context.Shelves;
-
-            if (!string.IsNullOrEmpty(dto.Title))
+            if (!string.IsNullOrWhiteSpace(dto.Title))
             {
-                query = query.Where(w => w.Title.Contains(dto.Title));
+                query = query.Where(genre => genre.Title.Contains(dto.Title));
             }
+            List<GetShelfsDto> genres = query.Select(genre => new GetShelfsDto
+            {
+                Id = genre.Id,
+                Title = genre.Title,
 
-            return query.ToList();
+            }).ToList();
+
+            return genres;
         }
+
+       
 
         public Shelf IsExisShelf(int Id)
         {

@@ -41,19 +41,11 @@ namespace Library.Services.Shelfs
             await _unitOfWork.Complete();
         }
 
-        public List<Shelf> GetAll(GetShelfsDto dto)
+      
+
+        public List<GetShelfsDto> GetAll(GetShelfFilterDto dto)
         {
-            try
-            {
-
-                var shelf = _repozitory.GetAll(dto);
-                return shelf;
-            }
-            catch (Exception ex)
-            {
-
-                throw new Exception("An error occurred while fetching books: " + ex.Message);
-            }
+            return _repozitory.GetAll(dto);
         }
 
         public async Task Update(int id, UpdateShelfDto dto)

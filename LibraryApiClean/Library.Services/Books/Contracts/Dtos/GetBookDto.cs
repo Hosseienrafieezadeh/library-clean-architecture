@@ -2,6 +2,7 @@
 {
     public class GetBookDto
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public string WriterName { get; set; }
         public string ShelfTitle { get; set; }

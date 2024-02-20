@@ -42,19 +42,9 @@ namespace Library.Services.Writers
           await  _unitOfWork.Complete();
         }
 
-        public List<Writer> GetAll(GetWriterDto dto)
+        public List<GetWriterDto > GetAll(GetWriterFilterDto dto)
         {
-            try
-            {
-
-                var writers = _repozitory.GetAll(dto);
-                return writers;
-            }
-            catch (Exception ex)
-            {
-
-                throw new Exception("An error occurred while fetching books: " + ex.Message);
-            }
+            return _repozitory.GetAll(dto);
         }
 
         public async Task Update(int id, UpdateWriterDto dto)

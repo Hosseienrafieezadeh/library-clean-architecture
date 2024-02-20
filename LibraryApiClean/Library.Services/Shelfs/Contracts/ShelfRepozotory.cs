@@ -14,8 +14,8 @@ namespace Library.Services.Shelfs.Contracts
         void Add(Shelf shelf);
         Shelf IsExisShelf(int Id);
         void Delete(Shelf shelf);
-
+        List<GetShelfsDto> GetAll(GetShelfFilterDto dto);
         void Update(Shelf shelf);
-        List<Shelf> GetAll(GetShelfsDto dto);
+
     }
 }

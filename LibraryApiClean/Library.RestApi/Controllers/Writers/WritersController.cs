@@ -38,10 +38,9 @@ namespace Library.RestApi.Controllers.Writers
         }
 
         [HttpGet("get")]
-        public void GetWriter( GetWriterDto dto)
+        public List<GetWriterDto> GetAll([FromQuery] GetWriterFilterDto dto)
         {
-            var writers = _service.GetAll(dto);
-        
+            return _service.GetAll(dto);
         }
     }
 }

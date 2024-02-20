@@ -33,47 +33,36 @@ namespace Library.Persistence.EF.Books
             _context.Books.Remove(book);
         }
 
-        public List<Book> GetAll(GetBookDto dto)
-        {
-            IQueryable<Book> query = _context.Books.Include(b => b.Rents);
-
-            if (!string.IsNullOrEmpty(dto.Name))
-            {
-                query = query.Where(b => b.Name.Contains(dto.Name));
-            }
-
-            if (!string.IsNullOrEmpty(dto.WriterName))
-            {
-                query = query.Where(b => b.Writer.Name.Contains(dto.WriterName));
-            }
-
-            if (!string.IsNullOrEmpty(dto.ShelfTitle))
-            {
-                query = query.Where(b => b.Shelf.Title.Contains(dto.ShelfTitle));
-            }
-
-            if (dto.DateOfRelease != default)
-            {
-                query = query.Where(b => b.DateOfRelease == dto.DateOfRelease);
-            }
-
-            if (dto.Inventory > 0)
-            {
-                query = query.Where(b => b.Inventory >= dto.Inventory);
-            }
-
-            if (dto.RentInventory > 0)
-            {
-                query = query.Where(b => b.Inventory>= dto.RentInventory);
-            }
-
-            return query.ToList();
-        }
+      
 
 
         public void Update(Book book)
         {
             _context.Books.Update(book);
+        }
+
+        public List<GetBookDto> GetAll(GetBookFilterDto filterDto)
+        {
+            IQueryable<Book> query = _context.Books;
+            if (!string.IsNullOrWhiteSpace(filterDto.Name))
+            {
+                query = query.Where(_ => _.Name.Contains(filterDto.Name));
+            }
+            if (!string.IsNullOrWhiteSpace(filterDto.Genre))
+            {
+                query = query.Where(_ => _.Shelf.Title.Contains(filterDto.Genre));
+            }
+            List<GetBookDto> books = query.Select(book => new GetBookDto
+            {
+                Id = book.Id,
+                Name = book.Name,
+                 WriterName = book.Writer.Name,
+                 DateOfRelease = book.DateOfRelease,
+                Inventory = book.Inventory,
+                RentInventory = _context.Set<Rent>().Count(_ => _.BookId == book.Id && _.BackBook == false),
+                ShelfTitle = book.Shelf.Title,
+            }).ToList();
+            return books;
         }
     }
 }

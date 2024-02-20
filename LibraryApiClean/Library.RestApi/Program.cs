@@ -1,5 +1,6 @@
 using Library.Persistence.EF;
 using Library.Persistence.EF.Books;
+using Library.Persistence.EF.EntitisMaps;
 using Library.Persistence.EF.Members;
 using Library.Persistence.EF.Shelfs;
 using Library.Persistence.EF.Writers;
@@ -21,6 +22,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddDbContext<EFDataContext>();
 builder.Services.AddScoped<BookService, BookAppService>();
 builder.Services.AddScoped<BookRepozitory,EFBookRepozitory>();
 builder.Services.AddScoped<WriterRepozitory,EFWriterRepozitory>();

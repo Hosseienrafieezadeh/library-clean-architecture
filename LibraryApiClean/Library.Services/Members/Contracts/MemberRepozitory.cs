@@ -21,6 +21,7 @@ namespace Library.Services.Members.Contracts
         void Delete(Member member);
 
         void Update(Member member);
-        List<Member> GetAll(GetMemberDto dto);
+        List<GetMemberRentBook> GetUserRentBooksByID(int userId);
+        List<GetMemberDto> GetUsersByName(GetMemberFillterDto filterDto);
     }
 }

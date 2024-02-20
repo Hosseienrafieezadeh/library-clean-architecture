@@ -34,25 +34,7 @@ namespace Library.Persistence.EF.Members
             _context.members.Remove(member);
         }
 
-        public List<Member> GetAll(GetMemberDto dto)
-        {
-            var query = _context.members
-                .Include(m => m.Rents)
-                    .ThenInclude(r => r.Book)
-                .AsQueryable();
-
-            if (!string.IsNullOrEmpty(dto.Name))
-            {
-                query = query.Where(m => m.Name.Contains(dto.Name));
-            }
-
-            if (!string.IsNullOrEmpty(dto.Email))
-            {
-                query = query.Where(m => m.Email.Contains(dto.Email));
-            }
-
-            return query.ToList();
-        }
+        
 
 
 
@@ -76,9 +58,46 @@ namespace Library.Persistence.EF.Members
             _context.members.Update(member);
         }
 
-        public void UpdateMemberrentBook(Rent rent)
+      
+            public void UpdateMemberrentBook(Rent rent)
         {
             _context.Rents.Update(rent);
        }
+
+        public List<GetMemberDto> GetUsersByName(GetMemberFillterDto filterDto)
+        {
+
+            IQueryable<Member> query = _context.members;
+
+            if (!string.IsNullOrWhiteSpace(filterDto.Name))
+            {
+                query = query.Where(user => user.Name.Contains(filterDto.Name));
+            }
+
+            List<GetMemberDto> users = query.Select(user => new GetMemberDto
+            {
+                Id = user.Id,
+                Name = user.Name,
+                Email = user.Email,
+            }).ToList();
+            return users;
+        }
+
+        public List<GetMemberRentBook> GetUserRentBooksByID(int userId)
+        {
+            var user = _context.members.Find(userId);
+            if (user is null)
+            {
+                throw new Exception("user not found");
+            }
+            var rentUserBooks = _context.Set<Rent>().Where(_ => _.UserId == userId);
+            List<GetMemberRentBook> userRents = rentUserBooks.Select(userRent => new GetMemberRentBook
+            {
+                BookName = userRent.Book.Name,
+                Status = (userRent.BackBook ? "Before" : "already")
+
+            }).ToList();
+            return userRents;
+        }
     }
 }

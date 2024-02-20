@@ -15,7 +15,7 @@ namespace Library.Services.Books.Contracts
         void Delete(Book book);
 
         void Update( Book book);
-        List<Book> GetAll(GetBookDto dto);
-           
+        List<GetBookDto> GetAll(GetBookFilterDto filterDto);
+
     }
 }

@@ -48,24 +48,15 @@ namespace Library.Services.Books
 
 
 
-        public List<Book> GetAll(GetBookDto dto)
+       
+
+        public List<GetBookDto> GetAll(GetBookFilterDto filterDto)
         {
-            try
-            {
-            
-                var books = _repozitory.GetAll(dto);
-                return books;
-            }
-            catch (Exception ex)
-            {
-             
-                throw new Exception("An error occurred while fetching books: " + ex.Message);
-            }
+          
+                return _repozitory.GetAll(filterDto);
+        
+
         }
-
-
-
-
 
         public async Task Update(int id, UpdateBookDto dto)
         {

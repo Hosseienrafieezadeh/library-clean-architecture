@@ -14,9 +14,9 @@ namespace Library.Services.Members.Contracts
         Task AddMemberRentBook(MemberAddRentBookDto dto);
         Task UpdateMemberrentBook(UpdateMemberRentBookDTo dto);
         Task Delete(string name);
-
+        List<GetMemberRentBook> GetUserRentBooks(int userId);
         Task Update(string name,UpdateMemberDtoscs dto);
-        List<Member> GetAll(GetMemberDto dto);
+        List<GetMemberDto> GetUser(GetMemberFillterDto filterDto);
 
     }
 }

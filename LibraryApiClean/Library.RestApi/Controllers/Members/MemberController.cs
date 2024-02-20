@@ -50,11 +50,16 @@ namespace Library.RestApi.Controllers.Members
             
         }
 
-        [HttpGet("get")]
-        public void GetMembers(GetMemberDto dto)
+        [HttpGet("get-all")]
+        public List<GetMemberDto> GetUsersByName([FromQuery] GetMemberFillterDto filterDto)
         {
-            _service.GetAll(dto);
-            
+            return _service.GetUser(filterDto);
+        }
+
+        [HttpGet("get-user-rent-books")]
+        public List<GetMemberRentBook> GetUserRentBooks([FromQuery] int userId)
+        {
+            return _service.GetUserRentBooks(userId);
         }
     }
 }
